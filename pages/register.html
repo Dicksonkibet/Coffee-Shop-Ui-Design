@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register — Brewed Awakenings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+  <div class="auth-wrapper">
+    <div class="auth-card">
+
+      <div class="auth-logo">
+        <span>☕</span>
+        <h2>Join the Family</h2>
+        <p>Create your free account — your first coffee is on us</p>
+      </div>
+
+      <form class="auth-form" id="register-form" novalidate>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <div class="input-wrap">
+            <input type="text" id="name" name="name" placeholder="Jane Wanjiku" autocomplete="name"/>
+          </div>
+          <p class="field-error" id="name-err"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <div class="input-wrap">
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"/>
+          </div>
+          <p class="field-error" id="email-err"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <input type="password" id="password" name="password" placeholder="Min. 8 characters" autocomplete="new-password"/>
+            <span class="toggle-pw" title="Toggle visibility">👁</span>
+          </div>
+          <div class="strength-bar"><div class="strength-fill" id="strength-fill"></div></div>
+          <p class="strength-label" id="strength-label"></p>
+          <p class="field-error" id="pw-err"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-pw">Confirm Password</label>
+          <div class="input-wrap">
+            <input type="password" id="confirm-pw" name="confirm-pw" placeholder="Repeat your password" autocomplete="new-password"/>
+            <span class="toggle-pw" title="Toggle visibility">👁</span>
+          </div>
+          <p class="field-error" id="pw2-err"></p>
+        </div>
+
+        <button type="submit" class="auth-submit">Create Account</button>
+
+        <div class="auth-divider">or</div>
+
+        <div class="auth-switch">
+          Already have an account? <a href="login.html">Sign in →</a>
+        </div>
+        <div class="auth-switch" style="margin-top:.5rem">
+          <a href="../index.html" style="color:#9c7c5e">← Back to Home</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

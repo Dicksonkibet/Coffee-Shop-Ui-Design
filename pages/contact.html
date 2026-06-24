@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Brewed Awakenings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="../index.html" class="logo">☕ Brewed Awakenings</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-auth" id="nav-auth">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="register.html" class="btn-fill">Sign Up</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>We'd Love to Hear From You</h1>
+  </section>
+
+  <div class="contact-section">
+
+    <div class="contact-info">
+      <span class="eyebrow">Find Us</span>
+      <h2>Visit the Shop</h2>
+      <p style="margin-bottom:2rem">We're always happy to see new faces. Walk-ins welcome.</p>
+
+      <div class="contact-detail">
+        <span class="contact-icon">📍</span>
+        <div><h4>Address</h4><p>14 Muthangari Drive, Westlands<br/>Nairobi, Kenya</p></div>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">🕐</span>
+        <div><h4>Opening Hours</h4><p>Monday – Friday: 7:00 AM – 9:00 PM<br/>Weekends: 8:00 AM – 8:00 PM</p></div>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">📞</span>
+        <div><h4>Phone</h4><p>+254 712 345 678</p></div>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">✉️</span>
+        <div><h4>Email</h4><p>hello@brewedawakenings.co.ke</p></div>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-icon">📱</span>
+        <div><h4>Social</h4><p>@BrewedAwakenings on Instagram &amp; Twitter</p></div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="c-name">Your Name</label>
+          <input type="text" id="c-name" placeholder="Jane Wanjiku" required/>
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email Address</label>
+          <input type="email" id="c-email" placeholder="you@example.com" required/>
+        </div>
+        <div class="form-group">
+          <label for="c-topic">Topic</label>
+          <select id="c-topic">
+            <option value="">Select a topic…</option>
+            <option>General Inquiry</option>
+            <option>Private Event Booking</option>
+            <option>Wholesale / Beans</option>
+            <option>Barista Workshop</option>
+            <option>Feedback</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" placeholder="Tell us what's on your mind…" required></textarea>
+        </div>
+        <button type="submit" class="btn-fill" style="width:100%;border:none;cursor:pointer;font-family:inherit;font-size:1rem;padding:.9rem">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand"><span class="logo">☕ Brewed Awakenings</span><p>A little corner of calm in a busy city.</p></div>
+      <div class="footer-links"><h5>Explore</h5><a href="menu.html">Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h5>Account</h5><a href="login.html">Login</a><a href="register.html">Register</a></div>
+      <div class="footer-links"><h5>Visit Us</h5><p>14 Muthangari Drive<br/>Westlands, Nairobi</p><p>Mon–Sun: 7am – 9pm</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Brewed Awakenings. Crafted By Marion with ❤️. </p></div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>
